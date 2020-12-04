@@ -48,7 +48,7 @@ elif query == 3:
         SELECT *
         FROM HireAgreements h
         INNER JOIN Dates d on h.startDate = d.startDate
-        WHERE d.endDate = '10-02-2020';
+        WHERE d.endDate = '10-02-2020'
         """)
     columns = [c[0] for c in cursor.description]
     data = cursor.fetchall()
@@ -72,7 +72,7 @@ elif query == 5:
         SELECT *
         FROM CarStaff c
         JOIN Outlet o ON o.outletNum = c.outletNum
-        WHERE o.address = '1st street';
+        WHERE o.address = '1st street'
         """)
     columns = [c[0] for c in cursor.description]
     data = cursor.fetchall()
